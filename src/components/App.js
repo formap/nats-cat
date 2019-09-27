@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Country from './Country';
 import Home from './Home';
 import Info from './Info';
-import Tags from '../Tags';
+import Tags from './Tags';
 import '../App.css';
 
 function App() {
