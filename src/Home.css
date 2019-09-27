@@ -1,0 +1,12 @@
+.divWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.searchFieldWrapper {
+    max-width: 350px;
+    min-width: 250px;
+
+}
