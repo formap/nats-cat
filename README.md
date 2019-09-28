@@ -1,4 +1,4 @@
-# GTH-Barcelona-NatsPointTeam
+# GTH-Barcelona-NatsPointSystem
 Project submission for the `Global Travel Hackathon in [Barcelona], by [Nat's point system] team`.
 
 ![Add a screenshot from your project. For example the main website page.](https://raw.githubusercontent.com/Global-Travel-Hackathon/GTH-Location-TeamName/master/screenshots/Global-Travel-Hackathon-image.png)
@@ -31,7 +31,7 @@ List all the team members.
 
 ## :hammer_and_wrench: Installation
 
-`Clone this project and run npm run start`
+Clone this project and run `npm start`
 
 ## :bulb: Devstack
 
