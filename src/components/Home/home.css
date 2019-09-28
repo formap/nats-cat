@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 42%;
+    padding-top: 35%;
 }
 
 .divWrapper .section-header {
@@ -16,10 +16,9 @@
 }
 
 .searchField {
-    max-width: 350px;
-    min-width: 250px;
+    min-width: 276px;
     font-size: 16px;
-    width: 257px;
+    width: 276px;
     border-color: #7A18FF;
     outline: none;
     height: 50px;
@@ -31,7 +30,7 @@
     font-family: 'Muli', sans-serif;
 }
 
-.spain, .croatia, .turkey, .greece {
+.spain, .croatia, .turkey, .greece, .italy, .france {
     margin: 10px;
     min-width: 276px;
     height: 55px;
@@ -44,7 +43,7 @@
 }
 
 .spain {
-    background: url('/spain.jpg');
+    background: url('/images/countries/spain.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 0%;
@@ -52,21 +51,35 @@
 }
 
 .croatia {
-    background: url('/croatia.jpg');
+    background: url('/images/countries/croatia.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .turkey {
-    background: url('/turkey.jpg');
+    background: url('/images/countries/turkey.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .greece {
-    background: url('/greece.jpg');
+    background: url('/images/countries/greece.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.france {
+    background: url('/images/countries/france.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.italy {
+    background: url('/images/countries/italy.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
