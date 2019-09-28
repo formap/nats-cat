@@ -33,7 +33,7 @@ class Country extends React.Component {
         for (let i = 0; i < res.length; ++i) {
           let image = res[i].img;
           let headline = res[i].title;
-          articles.push(<Article key={i} image={image} headline={headline} />);
+          articles.push(<Article key={i} image={image} headline={headline} url={res[i].url} />);
         }
         this.setState({ articles });
     });
