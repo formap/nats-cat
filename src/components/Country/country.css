@@ -95,6 +95,10 @@
 }
 
 .tab {
-    padding: 3% 3%;
+    line-height: 45px;
+    min-height: 45px;
+}
+
+.tabs > a {
     flex-grow: 1;
 }
