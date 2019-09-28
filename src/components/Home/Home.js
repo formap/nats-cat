@@ -8,8 +8,8 @@ function Home() {
   }
 
   return (
-    <div className="divWrapper">
-      <div className="textWrapper">
+    <div className='divWrapper'>
+      <div className='textWrapper'>
         Where to next?
       </div>
       
@@ -17,26 +17,26 @@ function Home() {
         <input className='searchField' placeholder='Search'/>
       </div>
 
-      <Link to="/es" className="link">
-        <div className="spain">
+      <Link to='/es' className='link'>
+        <div className='spain'>
           spain
         </div>
       </Link>
 
-      <Link to="/cro" className="link">
-        <div className="croatia">
+      <Link to='/cro' className='link'>
+        <div className='croatia'>
           croatia
         </div>
       </Link>
 
-      <Link to="/tr" className="link">
-        <div className="turkey">
+      <Link to='/tr' className='link'>
+        <div className='turkey'>
           turkey
         </div>
       </Link>
 
-      <Link to="/gr" className="link">
-        <div className="greece">
+      <Link to='/gr' className='link'>
+        <div className='greece'>
           greece
         </div>
       </Link>
