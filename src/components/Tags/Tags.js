@@ -23,6 +23,7 @@ class Tags extends React.Component {
         }
     });
   }
+  
   render() {
     const colors = ['purple', 'teal', 'light-green', 'light-blue', 'calm-red', 'yellow']
     return (
