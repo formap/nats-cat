@@ -50,8 +50,11 @@ class Country extends React.Component {
     return (
       <div className='country'>
         <div className='header'>
+          <div className='icon left' onClick={() => this.props.history.goBack()}>
+            <img src='/icons/back.svg' alt='Back Icon' />
+          </div>
           <div className='section-header title'>{countryName.toUpperCase()}</div>
-          <div className='icon'>
+          <div className='icon right'>
             <Link to='/' className='link'>
               <img src='/icons/search.svg' alt='Search Icon' />
             </Link>
@@ -81,7 +84,7 @@ class Country extends React.Component {
           </div>
         </Link>
         <div className='news'>
-          <div className='section-header title'>{sectionTitle.toUpperCase()}</div>
+          <div className='section-header title'>{sectionTitle}</div>
           <div className='tabs'>
             <Link to={`/${this.props.match.params.countryId}/tags/politics`} className='link'>
             <div className='tab purple'>

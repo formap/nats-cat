@@ -2,22 +2,31 @@
     width: 100%;
 }
 
-.country .header {
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 7% auto;
+    text-align: center;
     position: relative;
+}
+
+.country .header {
+    margin: 7% auto;
 }
 
 .header .title {
     margin-bottom: auto;
 }
 
-.header .icon {
+.header .icon.left {
     position: absolute;
-    right: 36px;
+    left: 10px;
+}
+
+.header .icon.right {
+    position: absolute;
+    right: 10px;
 }
 
 .map {

@@ -25,10 +25,14 @@ class TagNews extends React.Component {
         tagName = !!tagName ? tagName.charAt(0).toUpperCase() + tagName.substring(1) : tagName;
 
         return (
-            <div>
-                <div className='section-header'>
-                    {tagName}
-                    <div className={`underline ${this.props.color}`}></div>
+            <div className='tagNews'>
+                <div className='header'>
+                    <div className='icon left' onClick={() => this.props.history.goBack()}>
+                        <img src='/icons/back.svg' alt='Back Icon' />
+                    </div>
+                    <div className='section-header'>
+                        {tagName}
+                    </div>
                 </div>
                 <div className='articles'>
                     {this.getArticles()}

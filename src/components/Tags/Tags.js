@@ -25,7 +25,12 @@ class Tags extends React.Component {
 
     return (
       <div className='tags-wrapper'>
-        <div className='section-header'>Popular tags</div>
+        <div className='header'>
+          <div className='icon left' onClick={() => this.props.history.goBack()}>
+            <img src='/icons/back.svg' alt='Back Icon' />
+          </div>
+          <div className='section-header'>Popular tags</div>
+        </div>
         {tags}
       </div>
     );

@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.divWrapper .section-header {
+    margin-bottom: 10%;
+}
+
 .textWrapper {
     margin: 10px;
     font-weight: 800;
