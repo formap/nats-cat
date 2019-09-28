@@ -3,17 +3,29 @@ import Article from '../Article/index';
 import './tagNews.css';
 
 class TagNews extends React.Component {
-    getArticles() {
-        const articles = this.props.location.articles || [];
-        const articleComponents = [];
-        
-        for (let i = 0; i < articles.length; ++i) {
-            let image = articles[i].img;
-            let headline = articles[i].title;
-            articleComponents.push(<Article key={i} image={image} headline={headline} />);
-        }
+    state = {
+        articles:  []
+    };
 
-        return articleComponents;
+    componentDidMount() {
+        this.getArticles();
+    }
+
+    getArticles() {
+        if (this.props.location.articles === undefined) {
+            const tag = this.props.match.params.tag;
+            fetch(`http://10.10.72.89:8080/articlesTagged?country=${this.props.match.params.country}`)
+                .then((data) => data.json())
+                .then((res) => {
+                    for (let [key, articlesApi] of Object.entries(res)) {
+                        if (key.toLowerCase() === tag) {
+                            this.setState({ articles: articlesApi });
+                        }
+                    }
+                });
+        } else {
+            this.setState({ articles: this.props.location.articles });
+        }
     }
 
     render() {
@@ -31,7 +43,7 @@ class TagNews extends React.Component {
                     </div>
                 </div>
                 <div className='articles'>
-                    {this.getArticles()}
+                    {this.state.articles.map((article, key) => <Article key={key} image={article.img} headline={article.title} url={article.url} />)}
                 </div>
             </div>
         );
