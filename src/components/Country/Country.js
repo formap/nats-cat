@@ -46,7 +46,7 @@ class Country extends React.Component {
   }
 
   render() {
-    const countryName = 'croatia';
+    const countryName = this.props.match.params.country || 'Unknown';
     const sectionTitle = "what's happening";
     // this.loadMap = this.loadMap.bind(this, MAPS_API_KEY);
 
