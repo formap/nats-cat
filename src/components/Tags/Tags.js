@@ -8,7 +8,6 @@ class Tags extends React.Component {
   };
 
   componentDidMount() {
-    // this.loadMap();
     this.getTags()
   }
 
