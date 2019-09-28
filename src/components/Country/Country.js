@@ -16,7 +16,7 @@ class Country extends React.Component {
       'Unknown': 'us'
     };
     this.state = {
-      articles: [],
+      articles: []
     };
   }
 
@@ -38,8 +38,6 @@ class Country extends React.Component {
         this.setState({ articles });
     });
   }
-
-
 
   render() {
     const countryName = this.props.match.params.country || 'Unknown';
