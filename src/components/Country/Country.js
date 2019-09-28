@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import CountryFlag from "@kiwicom/orbit-components/lib/CountryFlag";
+import CountryFlag from '@kiwicom/orbit-components/lib/CountryFlag';
 import Article from '../Article/index';
 import './country.css';
-
-// import { MAPS_API_KEY } from '../../environment.js';
 
 class Country extends React.Component {
 
@@ -15,30 +13,15 @@ class Country extends React.Component {
       'france': 'fr',
       'italy': 'it',
       'spain': 'es',
-      'Unknown': 'usa'
+      'Unknown': 'us'
     };
     this.state = {
       articles: [],
     };
   }
 
-  loadMap(key) {
-    function initMap() {
-      /* eslint-disable no-undef */
-      const map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
-      });
-    }
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap`, true);
-    xhttp.send();
-  }
-
   componentDidMount() {
-    // this.loadMap();
-    this.getArticles()
+    this.getArticles();
   }
 
   getArticles() {
@@ -60,9 +43,8 @@ class Country extends React.Component {
 
   render() {
     const countryName = this.props.match.params.country || 'Unknown';
-    const flagCode = this.countryCodes[countryName] || 'usa';
+    const flagCode = this.countryCodes[countryName] || 'us';
     const sectionTitle = "what's happening";
-    // this.loadMap = this.loadMap.bind(this, MAPS_API_KEY);
 
     return (
       <div className='country'>
