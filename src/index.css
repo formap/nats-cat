@@ -17,6 +17,14 @@ body {
   color: #FFF;
 }
 
+.floating-blur {
+  width: 100%;
+  min-height: 70px;
+  position: absolute;
+  bottom: 0;
+  filter: blur(50px);
+}
+
 .purple {
   background-color: #9C56B8;
 }
