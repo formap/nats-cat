@@ -1,4 +1,4 @@
-# GTH-Location-TeamName
+# GTH-Barcelona-NatsPointSystem
 Project submission for the `Global Travel Hackathon in [Barcelona], by [Nat's point system] team`.
 
 ![Add a screenshot from your project. For example the main website page.](https://raw.githubusercontent.com/Global-Travel-Hackathon/GTH-Location-TeamName/master/screenshots/Global-Travel-Hackathon-image.png)
@@ -31,11 +31,11 @@ List all the team members.
 
 ## :hammer_and_wrench: Installation
 
-Write a short description how can other people run your project.
+Clone this project and run `npm start`
 
 ## :bulb: Devstack
 
-Please, explain what technologies you have used.
+We used React for the frontend and Golang for the backend (which can be found here: https://github.com/jcasado94/nats-points)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
