@@ -60,7 +60,7 @@ class Country extends React.Component {
           </div>
         </div>
         <Link to={`/${this.props.match.params.country}/info`} className='link'>
-          <div id='map' className='map'>
+          <div id='map' className={`map ${this.props.match.params.country}-map`}>
             <div className='overlay'></div>
             <div className='flag'>
               <CountryFlag code={flagCode} size="medium" name={countryName} />

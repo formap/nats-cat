@@ -37,6 +37,18 @@
     background-size: cover;
 }
 
+.map.france-map {
+    background-image: url('/images/map_france.png');
+}
+
+.map.spain-map {
+    background-image: url('/images/map_spain.png');
+}
+
+.map.italy-map {
+    background-image: url('/images/map_italy.png');
+}
+
 .overlay {
     width: 100%;
     height: 100%;
