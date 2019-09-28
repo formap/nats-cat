@@ -1,0 +1,67 @@
+.divWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textWrapper {
+    margin: 10px;
+}
+
+.searchField {
+    max-width: 350px;
+    min-width: 250px;
+    font-size: 16px;
+    width: 276px;
+    border-color: #7A18FF;
+    outline: none;
+    height: 50px;
+}
+::placeholder {
+    color: #4C4C4C;
+    font-family: 'Muli', sans-serif;
+    padding-left: 15px;
+}
+
+.spain, .croatia, .turkey, .greece {
+    margin: 10px;
+    min-width: 276px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.spain {
+    background: url('/spain.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 0%;
+}
+
+.croatia {
+    background: url('/croatia.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.turkey {
+    background: url('/turkey.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.greece {
+    background: url('/greece.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}

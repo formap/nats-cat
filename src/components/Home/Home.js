@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import InputField from '@kiwicom/orbit-components/lib/InputField';
-import '../Home.css';
+import './home.css';
 
 function Home() {
   const onChange = () => {
@@ -15,30 +14,30 @@ function Home() {
       </div>
       
       <div className='searchFieldWrapper'>
-        <InputField placeholder='Search'/>
+        <input className='searchField' placeholder='Search'/>
       </div>
 
       <Link to="/es" className="link">
         <div className="spain">
-        spain
+          spain
         </div>
       </Link>
 
       <Link to="/cro" className="link">
         <div className="croatia">
-        croatia
+          croatia
         </div>
       </Link>
 
       <Link to="/tr" className="link">
         <div className="turkey">
-        turkey
+          turkey
         </div>
       </Link>
 
       <Link to="/gr" className="link">
         <div className="greece">
-        greece
+          greece
         </div>
       </Link>
         
