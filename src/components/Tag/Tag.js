@@ -4,8 +4,15 @@ import './tag.css';
 
 class Tag extends React.Component {
     render() {
+        console.log(this.props)
         return (
-            <Link to={`/${this.props.country}/tags/${this.props.tag.toLowerCase()}`} params={{color: this.props.color}} className='link'>
+            <Link to={ 
+                    {
+                        pathname: `/${this.props.country}/tags/${this.props.tag.toLowerCase()}`,
+                        articles: this.props.articles
+                    }
+                } 
+                params={{color: this.props.color}} className='link'>
                 <div className={`tag ${this.props.color}`}>
                     <span className='text'>{this.props.name}</span>
                 </div>

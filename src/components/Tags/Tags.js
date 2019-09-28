@@ -4,7 +4,7 @@ import './tags.css';
 
 class Tags extends React.Component {
   state = {
-    tags: []
+    tags:  []
   };
 
   componentDidMount() {
@@ -17,8 +17,8 @@ class Tags extends React.Component {
       .then((data) => data.json())
       .then((res) => {
         const tagsApi = [];
-        for (let [key, ] of Object.entries(res)) {
-          tagsApi.push(key);
+        for (let [key, articles] of Object.entries(res)) {
+          tagsApi.push({ name: key, articles});
           this.setState({ tags: tagsApi });
         }
     });
@@ -33,7 +33,7 @@ class Tags extends React.Component {
           </div>
           <div className='section-header'>Popular tags</div>
         </div>
-        {this.state.tags.map((tag, key) => <Tag key={tag} country={this.props.match.params.country} tag={tag} name={tag} color={colors[key]}/>)}
+        {this.state.tags.map((tag, key) => <Tag key={tag.name} articles={tag.articles} country={this.props.match.params.country} tag={tag.name} name={tag.name} color={colors[key]}/>)}
       </div>
     );
   }
