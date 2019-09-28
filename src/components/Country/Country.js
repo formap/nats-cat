@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CountryFlag from "@kiwicom/orbit-components/lib/CountryFlag";
 import Article from '../Article/index';
 import './country.css';
 
@@ -7,9 +8,19 @@ import './country.css';
 
 class Country extends React.Component {
 
-  state = {
-    articles: []
-  };
+  constructor(props) {
+    super(props);
+    this.countryCodes = {
+      'croatia': 'hr',
+      'france': 'fr',
+      'italy': 'it',
+      'spain': 'es',
+      'Unknown': 'usa'
+    };
+    this.state = {
+      articles: [],
+    };
+  }
 
   loadMap(key) {
     function initMap() {
@@ -45,8 +56,11 @@ class Country extends React.Component {
     });
   }
 
+
+
   render() {
     const countryName = this.props.match.params.country || 'Unknown';
+    const flagCode = this.countryCodes[countryName] || 'usa';
     const sectionTitle = "what's happening";
     // this.loadMap = this.loadMap.bind(this, MAPS_API_KEY);
 
@@ -67,7 +81,7 @@ class Country extends React.Component {
           <div id='map' className='map'>
             <div className='overlay'></div>
             <div className='flag'>
-              <img src='/images/flag.svg' alt='Search Icon' />
+              <CountryFlag code={flagCode} size="medium" name={countryName} />
             </div>
             <div className='floating-blur'></div>
             <div className='floating-data'>
