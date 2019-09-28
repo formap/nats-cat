@@ -1,8 +1,16 @@
+.infoBox {
+    width: 100%;
+    margin-top: 7%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
 .row {
     display: flex;
     flex-direction: row;
     position: relative;
     justify-content: space-between;
+    margin-top: 25px;
 }
 
 .information-field {
@@ -19,4 +27,16 @@
 .information-field .value {
     font-size: 16px;
     color: #121212;
+}
+
+.value.bad {
+    color: #B90000;
+}
+
+.value.regular {
+    color: #FF7805;
+}
+
+.value.good {
+    color: #108A00;
 }

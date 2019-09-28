@@ -53,25 +53,25 @@ class Info extends React.Component {
           <div className="row">
             <div className='information-field left'>
               <span className='label'>Air Pollution</span>
-              <span className='value'>11 Micrograms per cubic metre{this.props.airPollution}</span>
+              <span className='value bad'>11 Micrograms per cubic metre{this.props.airPollution}</span>
             </div>
           </div>
           <div className="row">
             <div className='information-field left'>
               <span className='label'>Water Quality</span>
-              <span className='value'>72%{this.props.waterQuality}</span>
+              <span className='value regular'>72%{this.props.waterQuality}</span>
             </div>
           </div>
           <div className="row">
             <div className='information-field left'>
               <span className='label'>Unemployment Rate</span>
-              <span className='value'>7.66{this.props.unemployment}</span>
+              <span className='value regular'>7.66{this.props.unemployment}</span>
             </div>
           </div>
           <div className="row">
             <div className='information-field left'>
               <span className='label'>Feeling Safe Walking Alone At Night</span>
-              <span className='value'>82.1%{this.props.nightSafety}</span>
+              <span className='value good'>82.1%{this.props.nightSafety}</span>
             </div>
           </div>
         </div>
