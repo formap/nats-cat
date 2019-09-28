@@ -4,6 +4,7 @@ import Country from './Country/index';
 import Home from './Home/index';
 import Info from './Info/index';
 import Tags from './Tags/index';
+import TagNews from './TagNews/index';
 import '../App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route exact path='/:countryId' render={(props) => <Country {...props} />}/>
         <Route exact path='/:countryId/info' render={(props) => <Info {...props} />}/>
         <Route exact path='/:countryId/tags' render={(props) => <Tags {...props} />}/>
+        <Route exact path='/:countryId/tags/:tagId' render={(props) => <TagNews {...props} />}/>
       </div>
     </Router>
   );

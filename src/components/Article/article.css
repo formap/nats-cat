@@ -1,6 +1,7 @@
 article {
     position: relative;
-    max-height: 250px;
+    max-height: 235px;
+    overflow: hidden;
 }
 
 article img {
@@ -11,7 +12,7 @@ article img {
 
 .articles .floating-blur {
     background-color: #000;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .articles .headline {

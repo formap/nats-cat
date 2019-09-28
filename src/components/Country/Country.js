@@ -83,12 +83,12 @@ class Country extends React.Component {
         <div className='news'>
           <div className='section-header title'>{sectionTitle.toUpperCase()}</div>
           <div className='tabs'>
-            <Link to={`/${this.props.match.params.countryId}/tags`} className='link'>
+            <Link to={`/${this.props.match.params.countryId}/tags/politics`} className='link'>
             <div className='tab purple'>
               <span className='text'>Politics</span>
             </div>
             </Link>
-            <Link to={`/${this.props.match.params.countryId}/tags`} className='link'>
+            <Link to={`/${this.props.match.params.countryId}/tags/environment`} className='link'>
               <div className='tab light-green'>
                 <span className='text'>Environment</span>
               </div>

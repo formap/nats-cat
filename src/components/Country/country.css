@@ -44,14 +44,6 @@
     right: 25px;
 }
 
-.floating-blur {
-    width: 100%;
-    min-height: 70px;
-    position: absolute;
-    bottom: 0;
-    filter: blur(50px);
-}
-
 .map .floating-blur {
     background-color: #FFF;
     opacity: 0.7;
