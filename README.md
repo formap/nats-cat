@@ -1,7 +1,7 @@
 # GTH-Barcelona-NatsPointSystem
 Project submission for the `Global Travel Hackathon in [Barcelona], by [Nat's point system] team`.
 
-![Add a screenshot from your project. For example the main website page.](https://raw.githubusercontent.com/Global-Travel-Hackathon/GTH-Location-TeamName/master/screenshots/Global-Travel-Hackathon-image.png)
+![Gif](https://giphy.com/gifs/YTQ7dYankhVW8GayXr)
 
 ## :books: Description
 
