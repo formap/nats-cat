@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import InputField from '@kiwicom/orbit-components/lib/InputField';
 import '../Home.css';
 
@@ -9,10 +10,38 @@ function Home() {
 
   return (
     <div className="divWrapper">
-    <div className="textWrapper">Where to next?</div>
+      <div className="textWrapper">
+        Where to next?
+      </div>
+      
       <div className='searchFieldWrapper'>
         <InputField placeholder='Search'/>
       </div>
+
+      <Link to="/es" className="link">
+        <div className="spain">
+        spain
+        </div>
+      </Link>
+
+      <Link to="/cro" className="link">
+        <div className="croatia">
+        croatia
+        </div>
+      </Link>
+
+      <Link to="/tr" className="link">
+        <div className="turkey">
+        turkey
+        </div>
+      </Link>
+
+      <Link to="/gr" className="link">
+        <div className="greece">
+        greece
+        </div>
+      </Link>
+        
     </div>
   );
 }

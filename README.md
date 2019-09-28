@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GTH-Location-TeamName
+Project submission for the `Global Travel Hackathon in [Barcelona], by [Nat's point system] team`.
 
-## Available Scripts
+![Add a screenshot from your project. For example the main website page.](https://raw.githubusercontent.com/Global-Travel-Hackathon/GTH-Location-TeamName/master/screenshots/Global-Travel-Hackathon-image.png)
 
-In the project directory, you can run:
+## :books: Description
 
-### `npm start`
+Write a short abstract of the project. Don't forget to include:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Hackathon topic you used (Sustainability, Accessibility or Community);
+* The development tools used to build the project;
+* SDKs used in the project;
+* APIs used in the project;
+* Any assets used in the project;
+* Any libraries used in the project;
+* Any components not created at the hackathon;
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## :hugs: Maintainers
 
-### `npm test`
+List all the team members.
+* [Flor Tarditti - formap](https://github.com/formap)
+* [Josep Casado - jcasado94](https://github.com/jcasado94)
+* [Natali Nacinovic - nnacin](https://github.com/nnacin)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## :tada: Why is this so awesome?
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* List reasons why you think your project is awesome.
+* Two.
+* Etc.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## :hammer_and_wrench: Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Write a short description how can other people run your project.
 
-### `npm run eject`
+## :bulb: Devstack
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Please, explain what technologies you have used.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :warning: Licence
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Any intellectual property developed during and within the scope of the hackathon must be open source and licensed under one of the licenses referenced in https://opensource.org/licenses. We will not have any rights and teams will be the author of their work.
 
-## Learn More
+`Example:`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+>The code in this project is licensed under MIT license. By contributing to this project, you agree that your contributions will be licensed under its MIT license.
