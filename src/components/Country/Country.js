@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CountryFlag from "@kiwicom/orbit-components/lib/CountryFlag";
 import Article from '../Article/index';
+import GoogleMapReact from 'google-map-react';
 import './country.css';
 
-// import { MAPS_API_KEY } from '../../environment.js';
-
+import { MAPS_API_KEY } from '../../env.js';
+    
 class Country extends React.Component {
 
   constructor(props) {
@@ -18,7 +19,7 @@ class Country extends React.Component {
       'Unknown': 'usa'
     };
     this.state = {
-      articles: [],
+      articles: []
     };
   }
 
@@ -56,6 +57,14 @@ class Country extends React.Component {
     });
   }
 
+  
+  static defaultProps = {
+      center: {
+          lat: 40.337379,
+          lng: -3.988415
+      },
+      zoom: 6
+  };
 
 
   render() {
@@ -76,6 +85,12 @@ class Country extends React.Component {
               <img src='/icons/search.svg' alt='Search Icon' />
             </Link>
           </div>
+        </div>
+        <div style={{ height: '100vh', width: '100%' }}>
+                <GoogleMapReact
+                    bootstrapURLKeys={{ key: MAPS_API_KEY }}
+                    defaultCenter={this.props.center}
+                    defaultZoom={this.props.zoom} />
         </div>
         <Link to={`/${this.props.match.params.country}/info`} className='link'>
           <div id='map' className='map'>
