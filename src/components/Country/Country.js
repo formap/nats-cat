@@ -31,9 +31,7 @@ class Country extends React.Component {
   }
 
   getArticles() {
-    const country = this.props.match.params.country;
-    const countryCapitalized = country.charAt(0).toUpperCase() + country.slice(1)
-    fetch(`http://10.10.72.89:8080/articles?country=${countryCapitalized}`)
+    fetch(`http://10.10.72.89:8080/articles?country=${this.props.match.params.country}`)
       .then((data) => data.json())
       .then((res) => {
         const articles = [];
