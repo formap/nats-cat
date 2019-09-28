@@ -19,8 +19,10 @@ Write a short abstract of the project. Don't forget to include:
 
 ## :hugs: Maintainers
 
-List all the team members. For example:
-* [Jona Azizaj - jonatoni](https://github.com/jonatoni)
+List all the team members.
+* [Flor Tarditti - formap](https://github.com/formap)
+* [Josep Casado - jcasado94](https://github.com/jcasado94)
+* [Natali Nacinovic - nnacin](https://github.com/nnacin)
 
 
 ## :tada: Why is this so awesome?
