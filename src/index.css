@@ -11,3 +11,33 @@ body {
   font-size: 24px;
   color: #4C4C4C;
 }
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.purple {
+  background-color: #9C56B8;
+}
+
+.teal {
+  background-color: #00BE9C;
+}
+
+.light-green {
+  background-color: #50D88A;
+}
+
+.light-blue {
+  background-color: #2C97DF;
+}
+
+.calm-red {
+  background-color: #E84C3D;
+}
+
+.yellow {
+  background-color: #F1C50E;
+}
