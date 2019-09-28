@@ -13,10 +13,10 @@ function App() {
       <div className='App' >
         <header></header>
         <Route exact path='/' render={(props) => <Home {...props} />} />
-        <Route exact path='/:countryId' render={(props) => <Country {...props} />}/>
-        <Route exact path='/:countryId/info' render={(props) => <Info {...props} />}/>
-        <Route exact path='/:countryId/tags' render={(props) => <Tags {...props} />}/>
-        <Route exact path='/:countryId/tags/:tagId' render={(props) => <TagNews {...props} />}/>
+        <Route exact path='/:country' render={(props) => <Country {...props} />}/>
+        <Route exact path='/:country/info' render={(props) => <Info {...props} />}/>
+        <Route exact path='/:country/tags' render={(props) => <Tags {...props} />}/>
+        <Route exact path='/:country/tags/:tag' render={(props) => <TagNews {...props} />}/>
       </div>
     </Router>
   );

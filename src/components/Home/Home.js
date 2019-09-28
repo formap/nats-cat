@@ -17,25 +17,25 @@ function Home() {
         <input className='searchField' placeholder='Search'/>
       </div>
 
-      <Link to='/es' className='link'>
+      <Link to='/spain' className='link'>
         <div className='spain'>
           spain
         </div>
       </Link>
 
-      <Link to='/cro' className='link'>
+      <Link to='/croatia' className='link'>
         <div className='croatia'>
           croatia
         </div>
       </Link>
 
-      <Link to='/tr' className='link'>
+      <Link to='/turkey' className='link'>
         <div className='turkey'>
           turkey
         </div>
       </Link>
 
-      <Link to='/gr' className='link'>
+      <Link to='/greece' className='link'>
         <div className='greece'>
           greece
         </div>

@@ -7,6 +7,10 @@ import './country.css';
 
 class Country extends React.Component {
 
+  state = {
+    articles: []
+  };
+
   loadMap(key) {
     function initMap() {
       /* eslint-disable no-undef */
@@ -23,23 +27,24 @@ class Country extends React.Component {
 
   componentDidMount() {
     // this.loadMap();
+    this.getArticles()
   }
 
   getArticles() {
-    const articles = [
-      {img: '/images/news_1.png', headline: 'Croatian police use violence to push back migrants, president admits'},
-      {img: '/images/news_2.jpg', headline: 'Croatian police use violence to push back migrants, president admits'},
-      {img: '/images/news_3.jpg', headline: 'Croatian police use violence to push back migrants, president admits'},
-    ];
-
-    const articleComponents = [];
-    for (let i = 0; i < articles.length; ++i) {
-      let image = articles[i].img;
-      let headline = articles[i].headline;
-      articleComponents.push(<Article key={i} image={image} headline={headline} />);
-    }
-
-    return articleComponents;
+    const country = this.props.match.params.country;
+    const countryCapitalized = country.charAt(0).toUpperCase() + country.slice(1)
+    fetch(`http://10.10.72.89:8080/articles?country=${countryCapitalized}`)
+      .then((data) => data.json())
+      .then((res) => {
+        const articles = [];
+        
+        for (let i = 0; i < res.length; ++i) {
+          let image = res[i].img;
+          let headline = res[i].title;
+          articles.push(<Article key={i} image={image} headline={headline} />);
+        }
+        this.setState({ articles });
+    });
   }
 
   render() {
@@ -57,7 +62,7 @@ class Country extends React.Component {
             </Link>
           </div>
         </div>
-        <Link to={`/${this.props.match.params.countryId}/info`} className='link'>
+        <Link to={`/${this.props.match.params.country}/info`} className='link'>
           <div id='map' className='map'>
             <div className='overlay'></div>
             <div className='flag'>
@@ -83,24 +88,24 @@ class Country extends React.Component {
         <div className='news'>
           <div className='section-header title'>{sectionTitle.toUpperCase()}</div>
           <div className='tabs'>
-            <Link to={`/${this.props.match.params.countryId}/tags/politics`} className='link'>
+            <Link to={`/${this.props.match.params.country}/tags/politics`} className='link'>
             <div className='tab purple'>
               <span className='text'>Politics</span>
             </div>
             </Link>
-            <Link to={`/${this.props.match.params.countryId}/tags/environment`} className='link'>
+            <Link to={`/${this.props.match.params.country}/tags/environment`} className='link'>
               <div className='tab light-green'>
                 <span className='text'>Environment</span>
               </div>
             </Link>
-            <Link to={`/${this.props.match.params.countryId}/tags`} className='link'>
+            <Link to={`/${this.props.match.params.country}/tags`} className='link'>
               <div className='tab yellow'>
                 <span className='text'>More</span>
               </div>
             </Link>
           </div>
           <div className='articles'>
-            {this.getArticles()}
+            {this.state.articles}
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ class TagNews extends React.Component {
     }
 
     render() {
-        let tagName = this.props.match.params.tagId;
+        let tagName = this.props.match.params.tag;
         tagName = !!tagName ? tagName.charAt(0).toUpperCase() + tagName.substring(1) : tagName;
 
         return (

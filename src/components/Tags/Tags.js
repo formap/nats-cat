@@ -20,7 +20,7 @@ class Tags extends React.Component {
         name = name.charAt(0).toUpperCase() + name.substring(1);
       }
       let color = tag[i].color;
-      tags.push(<Tag key={name} countryId={this.props.match.params.countryId} tagId={tag[i].name} name={name} color={color}/>);
+      tags.push(<Tag key={name} country={this.props.match.params.country} tag={tag[i].name} name={name} color={color}/>);
     }
 
     return (
