@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Country from './Country';
-import Home from './Home';
-import Info from './Info';
+import Home from './Home/index';
+import Info from './Info/index';
 import Tags from './Tags/index';
 import '../App.css';
 
