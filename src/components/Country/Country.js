@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Article from '../Article/index';
 import './country.css';
 
@@ -50,41 +51,53 @@ class Country extends React.Component {
       <div className='country'>
         <div className='header'>
           <div className='section-header title'>{countryName.toUpperCase()}</div>
-          <div className='icon'><img src='/icons/search.svg' alt='Search Icon' /></div>
-        </div>
-        <div id='map' className='map'>
-          <div className='overlay'></div>
-          <div className='flag'>
-            <img src='/images/flag.svg' alt='Search Icon' />
-          </div>
-          <div className='floating-blur'></div>
-          <div className='floating-data'>
-            <div className='data-column'>
-              <span className='secondary'>Population</span>
-              <span>4,076,246</span>
-            </div>
-            <div className='data-column'>
-              <span className='secondary'>Area</span>
-              <span>56,594 km2</span>
-            </div>
-            <div className='data-column'>
-              <span className='secondary'>Capital</span>
-              <span>Zagreb</span>
-            </div>
+          <div className='icon'>
+            <Link to='/' className='link'>
+              <img src='/icons/search.svg' alt='Search Icon' />
+            </Link>
           </div>
         </div>
+        <Link to={`/${this.props.match.params.countryId}/info`} className='link'>
+          <div id='map' className='map'>
+            <div className='overlay'></div>
+            <div className='flag'>
+              <img src='/images/flag.svg' alt='Search Icon' />
+            </div>
+            <div className='floating-blur'></div>
+            <div className='floating-data'>
+              <div className='data-column'>
+                <span className='secondary'>Population</span>
+                <span>4,076,246</span>
+              </div>
+              <div className='data-column'>
+                <span className='secondary'>Area</span>
+                <span>56,594 km2</span>
+              </div>
+              <div className='data-column'>
+                <span className='secondary'>Capital</span>
+                <span>Zagreb</span>
+              </div>
+            </div>
+          </div>
+        </Link>
         <div className='news'>
           <div className='section-header title'>{sectionTitle.toUpperCase()}</div>
           <div className='tabs'>
+            <Link to={`/${this.props.match.params.countryId}/tags`} className='link'>
             <div className='tab purple'>
               <span className='text'>Politics</span>
             </div>
-            <div className='tab light-green'>
-              <span className='text'>Environment</span>
-            </div>
-            <div className='tab yellow'>
-              <span className='text'>More</span>
-            </div>
+            </Link>
+            <Link to={`/${this.props.match.params.countryId}/tags`} className='link'>
+              <div className='tab light-green'>
+                <span className='text'>Environment</span>
+              </div>
+            </Link>
+            <Link to={`/${this.props.match.params.countryId}/tags`} className='link'>
+              <div className='tab yellow'>
+                <span className='text'>More</span>
+              </div>
+            </Link>
           </div>
           <div className='articles'>
             {this.getArticles()}

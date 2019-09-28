@@ -7,7 +7,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 7% auto;;
+    margin: 7% auto;
+    position: relative;
 }
 
 .header .title {
@@ -95,6 +96,10 @@
 }
 
 .tab {
-    padding: 3% 3%;
+    line-height: 45px;
+    min-height: 45px;
+}
+
+.tabs > a {
     flex-grow: 1;
 }
