@@ -7,6 +7,7 @@
 .textWrapper {
     margin: 10px;
     font-weight: 800;
+    margin-bottom: 40px;
 }
 
 .searchField {
@@ -18,6 +19,7 @@
     outline: none;
     height: 50px;
     padding-left: 15px;
+    margin-bottom: 40px;
 }
 ::placeholder {
     color: #4C4C4C;
@@ -41,24 +43,28 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 0%;
+    background-size: cover;
 }
 
 .croatia {
     background: url('/croatia.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .turkey {
     background: url('/turkey.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .greece {
     background: url('/greece.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .link {
