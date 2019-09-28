@@ -4,16 +4,12 @@ import './tagNews.css';
 
 class TagNews extends React.Component {
     getArticles() {
-        const articles = [
-            {img: '/images/news_1.png', headline: 'Croatian police use violence to push back migrants, president admits'},
-            {img: '/images/news_2.jpg', headline: 'Croatian police use violence to push back migrants, president admits'},
-            {img: '/images/news_3.jpg', headline: 'Croatian police use violence to push back migrants, president admits'},
-        ];
-
+        const articles = this.props.location.articles || [];
         const articleComponents = [];
+        
         for (let i = 0; i < articles.length; ++i) {
             let image = articles[i].img;
-            let headline = articles[i].headline;
+            let headline = articles[i].title;
             articleComponents.push(<Article key={i} image={image} headline={headline} />);
         }
 
