@@ -1,7 +1,7 @@
 # GTH-Barcelona-NatsPointSystem
 Project submission for the `Global Travel Hackathon in [Barcelona], by [Nat's point system] team`.
 
-![Gif](https://giphy.com/gifs/YTQ7dYankhVW8GayXr)
+![Gif](https://gph.is/g/ZkNekDY)
 
 ## :books: Description
 
