@@ -1,0 +1,10 @@
+.country .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .icon {
+    position: absolute;
+    right: 36px;
+}
